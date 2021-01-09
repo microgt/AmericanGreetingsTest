@@ -76,6 +76,10 @@ public class GameManagerScript : MonoBehaviour
             swipeTimer = defaultSwipeTimer;
             canRegisterSwipe = true;
         }
+        //If the user presses the escape key or the back key on a phone the app closes
+        if(Input.GetKeyDown(KeyCode.Escape)){
+            Application.Quit();
+        }
     }
 
     /*When this event is called from outside, a click is registered prompting the double click
